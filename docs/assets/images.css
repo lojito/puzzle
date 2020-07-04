@@ -1,0 +1,36 @@
+.image-text {
+  margin-right: 5px;
+}
+
+.image-token {
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+
+.mobile {
+  display: none;
+}
+
+.image {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;  
+}
+
+@media screen and (max-width: 500px) {
+
+  .image-token {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+}
