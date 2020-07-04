@@ -1,0 +1,29 @@
+<nav>
+  <input type="checkbox" id="menu" />
+  <label class="menu-label" for="menu">
+    <div id="burger-container">
+        <div id="burger">
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+  </label>  
+  <ul>
+    <li>
+      <a [routerLink]="['/']"           routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{puzzle}}</a>
+    </li>
+    <li>
+      <a [routerLink]="['/history']"    routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{history}}</a>
+    </li>
+    <li>
+      <a [routerLink]="['/repository']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{repository}}</a>
+    </li>
+    <li>
+      <a [routerLink]="['/about']"      routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{about}}</a>
+    </li>
+    <li>
+      <a [routerLink]="['/contact']"    routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{contact}}</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,18 @@
+header { 
+  display:inline-block;
+  width: 20%;
+}
+
+.flags img {
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+@media screen and (max-width: 500px) {
+
+  header {
+    vertical-align: top;
+    width: 40%;
+  }
+
+}

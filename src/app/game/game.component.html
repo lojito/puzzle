@@ -1,0 +1,17 @@
+<div id="game" class="game">
+
+  <div class="info">{{goal}}</div>
+
+  <app-category (categoryChange)="onCategoryChange($event)"></app-category>
+
+  <app-image [folder]="folder" [image]="image" (imageChange)="onImageChange($event)"></app-image>
+
+  <app-stats [time]="time" [moves]="moves" [fails]="fails"></app-stats>
+
+  <app-board *ngIf="folder" [folder]="folder" [image]="image" (statsChange)="onStatsChange($event)"></app-board>
+    
+  <div *ngIf="over" class="info"> 
+    <span>{{end}}</span>
+  </div>
+  
+</div>

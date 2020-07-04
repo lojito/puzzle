@@ -1,0 +1,11 @@
+<div class="repository">
+
+  <app-category (categoryChange)="onCategoryChange($event)"></app-category>
+
+  <div class="repository-images">
+    <div *ngFor="let path of paths">
+      <img [src]="path" alt="user" />
+    </div>
+  </div>
+  
+</div>

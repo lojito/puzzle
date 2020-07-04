@@ -1,0 +1,25 @@
+<div class="history">
+
+  <div  *ngFor="let game of getGames(); let i = index;">
+
+    <app-category-history [categoryId]="game.categoryId"></app-category-history>
+
+    <app-image-history [folder]="game.folder" [image]="game.image"></app-image-history>
+
+    <app-stats [time]="game.time" [moves]="game.moves" [fails]="game.fails"></app-stats>
+
+    <div class="info" *ngIf="deleteGame">
+      <input type="button" [value]="deleteGame" class="delete-game" (click)="delete(game.id)"/>
+    </div>
+
+    <hr *ngIf="deleteGame">
+
+  </div>
+
+  <div *ngIf="noHistory" class="info">
+    {{noHistoryYet}}
+  </div>
+
+</div>
+
+ 

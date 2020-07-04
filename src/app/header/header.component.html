@@ -1,0 +1,8 @@
+<header>
+  <div class="flags">
+    <img *ngFor="let language of languages;" 
+          src='https://firebasestorage.googleapis.com/v0/b/puzzle-ebd10.appspot.com/o/images%2Fflags%2F{{language.flag}}.jpg?alt=media'
+          (click)="setLanguage(language.id)" 
+          alt={{language.flag}}/>
+  </div>
+</header>

@@ -1,0 +1,8 @@
+.refresh {
+  width: 30px;
+  height: 30px;  
+  margin: 0 5px;
+  position: relative;
+  top: 12px;
+  cursor: pointer;
+}
